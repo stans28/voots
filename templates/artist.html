@@ -1,0 +1,330 @@
+<!-- ######################################
+
+    * Designed by Tonny HERISON👽👽
+    * Média Design
+
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../plugins/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../assets/css/master.css">
+    <link rel="stylesheet" href="../assets/css/artist.css">
+
+    <title>Évènement</title>
+
+    <script src="../plugins/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../plugins/swiper/swiper.min.js"></script>
+</head>
+<body>
+    <div class="page">
+        <span class="menu_toggle">
+            <i class="menu_open fa fa-bars fa-lg"></i>
+            <i class="menu_close fa fa-times fa-lg"></i>
+        </span>
+
+        <ul class="menu_items">
+            <li>
+                <a href="../index.html">
+                    <i class="fa fa-home ico"></i> Accueil
+                </a>
+            </li>
+            <li>
+                <a href="event.html">
+                    <i class="fa fa-calendar ico"></i> Evènements
+                </a>
+            </li>
+            <li>
+                <a href="blog.html">
+                    <i class="fa fa-book-open ico"></i> Blog
+                </a>
+            </li>
+            <li class="active">
+                <a href="media.html">
+                    <i class="fa fa-music ico"></i> Artistes
+                </a>
+            </li>
+        </ul>
+
+        <main class="content">
+            <div class="content_inner">
+                <div class="container">
+                    <div id="progressBar"></div>
+                    <div id="scrollPath"></div>
+                    <div class="height">
+
+                        <div class="body">
+                            <div class="row no-gutter">
+                                <div class="tags col-3 hide-on-md-and-smaller text-white">
+                                    <div class="searchsong">
+                                        <form action="">
+                                            <!-- <label for="search"><i class="fa fa-search"></i></label>
+                                            <input type="text" id="search" placeholder="Rechercher..."> -->
+                                            <h2 class="text-white" style="margin-left: 1em;">VOOTS</h2>
+                                        </form>
+                                    </div>
+                                    <div class="filters">
+                                        <h4>
+                                            Filtrer
+                                        </h4>
+                                        <div class="filter-item">
+                                            <a href="" class="active">
+                                                <i class="fa fa-play"></i> Tout
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-music"></i> Audio
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-video"></i> Vidéos
+                                            </a>
+                                            <a href="">
+                                                <i class="fa fa-align-justify"></i> Autres
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="artists w-100">
+                                        <h4>
+                                            Artistes
+                                        </h4>
+                                        <table class="artist-item w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <td><span class="arrow">▸</span><a href="" class="white-text w-100">Artist 2</a></td>
+                                                    <td class="artist-products">4 Produits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="arrow">▸</span><a href="" class="white-text w-100">Artist 1</a></td>
+                                                    <td class="artist-products">20 Produits</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="arrow">▸</span><a href="" class="white-text w-100">Artist 3</a></td>
+                                                    <td class="artist-products">12 Produits</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                                <div class="list col-lg-9 col-md-12">
+                                    <div class="player" style="background-image: linear-gradient(to top,#00000069, #000000c4), url(../assets/images/singer5.JPG)">
+                                        <span class="lecteurTitle">
+                                            <i class="fa fa-play"></i>
+                                            <br>Lecteur
+                                        </span>
+                                    </div>
+                                    <div class="infos">
+                                        <div class="titre text-white">Titre</div>
+                                        <div class="artist">Artist</div>
+                                    </div>
+                                    <div>
+                                        <div class="musiclist">
+                                            <div class="head">
+                                                <h4><a href="" class="text-white">Musiques</a></h4>
+                                            </div>
+                                            <div class="music-items">
+                                                <div class="swiper-container-music">
+                                                    <div class="swiper-wrapper">
+                                                        <div class="swiper-slide">
+                                                            <div class="poster">
+                                                                <img src="../assets/images/album-1.jpg" alt="">
+                                                            </div>
+                                                            <div class="details">
+                                                                <span class="title">Titre</span>
+                                                                <span class="songs">Artist</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide played">
+                                                            <div class="poster">
+                                                                <img src="../assets/images/album-2.jpg" alt="">
+                                                                <div class="animated-play"></div>
+                                                            </div>
+                                                            <div class="details">
+                                                                <span class="title">Titre</span>
+                                                                <span class="songs">Artist</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="poster">
+                                                                <img src="../assets/images/album-3.jpg" alt="">
+                                                            </div>
+                                                            <div class="details">
+                                                                <span class="title">Titre</span>
+                                                                <span class="songs">Artist</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="poster">
+                                                                <img src="../assets/images/album-4.jpg" alt="">
+                                                            </div>
+                                                            <div class="details">
+                                                                <span class="title">Titre</span>
+                                                                <span class="songs">Artist</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-slide">
+                                                            <div class="poster">
+                                                                <img src="../assets/images/album-5.gif" alt="">
+                                                            </div>
+                                                            <div class="details">
+                                                                <span class="title">Titre</span>
+                                                                <span class="songs">Artist</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="musiclist">
+                                        <div class="head">
+                                            <h4><a href="" class="text-white">Vidéos</a></h4>
+                                        </div>
+                                        <div class="music-items">
+                                            <div class="swiper-container-music">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-1.jpg" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-2.jpg" alt="">
+                                                            <div class="animated-play"></div>
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-3.jpg" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-4.jpg" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-5.gif" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="musiclist">
+                                        <div class="head">
+                                            <h4><a href="" class="text-white">Autres</a></h4>
+                                        </div>
+                                        <div class="music-items">
+                                            <div class="swiper-container-music">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-1.jpg" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-2.jpg" alt="">
+                                                            <div class="animated-play"></div>
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-3.jpg" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-4.jpg" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="poster">
+                                                            <img src="../assets/images/album-5.gif" alt="">
+                                                        </div>
+                                                        <div class="details">
+                                                            <span class="title">Titre</span>
+                                                            <span class="songs">Artist</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <footer class="">
+                                        <p class="social">
+                                            <a href="">
+                                                <span class="fab fa-facebook-f"></span>
+                                            </a>
+                                            <a href="">
+                                                <span class="fab fa-youtube"></span>
+                                            </a>
+                                            <a href="">
+                                                <span class="fab fa-soundcloud"></span>
+                                            </a>
+                                        </p>
+                                        <p>© Copyright 2020. VOOTS Kongregation</p>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script type="text/javascript" src="../assets/js/artist.js"></script>
+    <script type="text/javascript" src="../assets/js/master.js"></script>
+
+</body>
+</html>

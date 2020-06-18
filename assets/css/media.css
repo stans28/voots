@@ -1,0 +1,45 @@
+.height .body{
+    transform: translateY(-50px);
+}
+
+.artist-item{
+    overflow: hidden;
+}
+
+.artist-item .bg-img img{
+    filter: blur(30px) brightness(60%);
+}
+
+.img-poster{
+    width: 80%;
+    margin-left: 10%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.artist-item .detail{
+    color: white;
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.5);
+}
+
+.artist-item .detail .name{
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.artist-item .detail .jouer a{
+    padding: 7px 14px;
+    font-size: 1.1em;
+    border: 1px solid #f0f0f0;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    transition: background-color .4s ease-in-out, color .3s ease-in-out, box-shadow .5s;
+}
+
+.artist-item .detail .jouer a:hover{
+    background-color : #f0f0f0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+    color: #686868;
+}
